@@ -1,0 +1,96 @@
+body {
+    background: aquamarine;
+    margin: 0;
+    font-family: sans-serif;
+    color: black;
+    font-size: 14px;
+
+}
+
+img {
+    display: block;
+    width: 125px;
+    left: 10px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 5px;
+
+}
+
+
+
+.logo img:hover {
+    transition: 10s;
+    animation-duration: 30s;
+    transform: rotateY(360deg);
+
+}
+
+#container {
+
+    width: 60%;
+    background: aquamarine;
+    margin: 20px auto;
+    overflow: auto;
+    padding: 25px;
+
+}
+
+header {
+
+    text-align: center;
+    border-bottom: black dashed 1px;
+
+}
+
+header h1 {
+
+    margin: 3em;
+    padding: 0;
+    color: blue;
+
+}
+
+header p {
+
+    padding: 0;
+    margin-top: 5px;
+    color: #000000;
+
+}
+
+h3 {
+
+    color: #000000;
+}
+
+section {
+
+    min-height: 410px;
+
+}
+
+input[type='submit'] {
+    background: #f06226;
+    border: 0;
+    color: #fff;
+    padding: 10px 15px;
+    cursor: pointer;
+
+
+
+}
+
+#resultado h3 {
+    background: gray;
+    padding: 10px;
+    margin: 10px;
+
+
+}
+
+#resultado span {
+    color: 000;
+    font-weight: bold;
+}
