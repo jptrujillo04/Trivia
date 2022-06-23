@@ -1,13 +1,71 @@
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trivia</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <div id="root"></div>
-    <script src="main.js"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trivia</title>
+  <link rel="stylesheet" href="estilos.css" type="text/css" media="all">
+</head>
+
+<body>
+  <div id="container"></div>
+  <header>
+
+
+    <div class="header_superior"></div>
+    <div class="center">
+      <div class="logo">
+        <a href="#" class="enlace">
+          <img src="logo.jpg.jpg" alt="Imagen de diseño web">
+          <img src="bienvenido.jpg" style="width:300px; height: 80px; left: 500px; margin: 1px; position: absolute;  ">
+
+        </a>
+
+        <h1>Cuestionario de preguntas</h1>
+        <p>Responde las siguientes preguntas</p>
+  </header>
+  <section>
+    <div id="resultado"></div>
+    <form name="quizForm" onsubmit="return verificarRespuestas()">
+
+      <h3>1.¿Angular es definido como?</h3>
+      <input type="radio" name="p1" value="a">a. Framework <br />
+      <input type="radio" name="p1" value="b">b. Libreria <br />
+      <input type="radio" name="p1" value="c">c. Lenguaje de programación <br />
+      <input type="radio" name="p1" value="d">d. Ninguna de las anteriores <br />
+
+      <h3>2.¿Javascript es lo mismo que Java?</h3>
+      <input type="radio" name="p2" value="a">a. Si <br />
+      <input type="radio" name="p2" value="b">b. No <br />
+      <input type="radio" name="p2" value="c">c. Aveces <br />
+      <input type="radio" name="p2" value="d">d. Casi Siempre
+
+      <h3>3.¿Cual no es un lenguaje programación?</h3>
+      <input type="radio" name="p3" value="a">a. HTML <br />
+      <input type="radio" name="p3" value="b">b. Css <br />
+      <input type="radio" name="p3" value="c">c. Phython <br />
+      <input type="radio" name="p3" value="d">d. Javascript <br />
+
+      <h3>¿Es posible utilizar Redux en aplicaciones de angular?</h3>
+      <input type="radio" name="p4" value="a">a. Si<br />
+      <input type="radio" name="p4" value="b">b. No<br />
+
+      <h3>¿Ionic esta basado en React?</h3>
+      <input type="radio" name="p5" value="a">a. si <br />
+      <input type="radio" name="p5" value="b">b. No <br />
+      <br> <br>
+
+      <input type="submit" value="Enviar">
+    </form>
+  </section>
+  </div>
+  <script src="main.js" type="text/javascript"></script>
+
+  </div>
+
+
+
+</body>
+
 </html>
