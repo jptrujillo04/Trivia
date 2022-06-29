@@ -9,60 +9,80 @@
 </head>
 
 <body>
+  <div class="start_btn"><button>Comenzar Quiz</button></div>
+  <div class="info_box">
+    <div class="info_title">
+      <span>Reglas del Quiz</span>
+    </div>
+    <div class="info_list">
+      <div class="info">1. Solo tienes <span>15 segundos</span> por cada pregunta</div>
+      <div class="info">2. Una vez que seleccione la respuesta, no podra volver a saleccionar</div>
+      <div class="info">3. No puede selccionar ninguna opción cuando el tiempo ha finalizado</div>
+      <div class="info">4. No se puede salir del Quiz mientras se esta jugando</div>
+      <div class="info">5. Obtendras puntos en base a tus respuestas correctas</div>
+    </div>
+    <div class="buttons">
+      <button class="quit">Exit Quiz</button>
+      <button class="restart">Reiniciar Quiz</button>
+    </div>
+  </div>
+  <div class="quiz_box">
+    <header>
+      <div class="title">Juego de preguntas</div>
+      <div class="timer">
+        <div class="time_text">Tiempo restante</div>
+        <div class="timer_sec">15</div>
+      </div>
+    </header>
+    <section>
+      <div class="que_text">
+        <span> Para que sirve HTML?</span>
+      </div>
+      <div class="option_list">
+        <div class="option">
+          <span> Que es procesador de hipertexto</span>
+          <div class="icon"></div><span class="material-symbols-outlined"> check
+          </span>
+          <div class="option">
+            <span> Que es lenguaje de marcado de hipertexto</span>
+            <div class="icon"></div><span class="material-symbols-outlined"> close
+            </span>
+            <div class="option">
+              <span> Cual no es un lenguaje de programación</span>
+            </div>
+            <div class="option">
+              <span> Javascript es lo mismo que java</span> <br> <br>
+            </div>
+          </div>
+    </section>
+
+    <footer>
+      <div class="total_que"></div>
+      <span>
+        <p>2</p>de<p>5</p>Preguntas
+      </span>
+      <br> <br>
+      <button class="next_btn">Siguiente</button>
+    </footer>
+  </div>
+  </div>
+
+  </div>
+
   <div id="container"></div>
   <header>
-
-
     <div class="header_superior"></div>
     <div class="center">
       <div class="logo">
         <a href="#" class="enlace">
           <img src="logo.jpg.jpg" alt="Imagen de diseño web">
-          <img src="bienvenido.jpg" style="width:300px; height: 80px; left: 500px; margin: 1px; position: absolute;  ">
+          <img src="bienvenido.jpg" style="width:300px; height: 80px; left: 500px; margin: 1px; position: absolute;">
+          <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 
-        </a>
 
-        <h1>Cuestionario de preguntas</h1>
-        <p>Responde las siguientes preguntas</p>
-  </header>
-  <section>
-    <div id="resultado"></div>
-    <form name="quizForm" onsubmit="return verificarRespuestas()">
 
-      <h3>1.¿Angular es definido como?</h3>
-      <input type="radio" name="p1" value="a">a. Framework <br />
-      <input type="radio" name="p1" value="b">b. Libreria <br />
-      <input type="radio" name="p1" value="c">c. Lenguaje de programación <br />
-      <input type="radio" name="p1" value="d">d. Ninguna de las anteriores <br />
 
-      <h3>2.¿Javascript es lo mismo que Java?</h3>
-      <input type="radio" name="p2" value="a">a. Si <br />
-      <input type="radio" name="p2" value="b">b. No <br />
-      <input type="radio" name="p2" value="c">c. Aveces <br />
-      <input type="radio" name="p2" value="d">d. Casi Siempre
-
-      <h3>3.¿Cual no es un lenguaje programación?</h3>
-      <input type="radio" name="p3" value="a">a. HTML <br />
-      <input type="radio" name="p3" value="b">b. Css <br />
-      <input type="radio" name="p3" value="c">c. Phython <br />
-      <input type="radio" name="p3" value="d">d. Javascript <br />
-
-      <h3>¿Es posible utilizar Redux en aplicaciones de angular?</h3>
-      <input type="radio" name="p4" value="a">a. Si<br />
-      <input type="radio" name="p4" value="b">b. No<br />
-
-      <h3>¿Ionic esta basado en React?</h3>
-      <input type="radio" name="p5" value="a">a. si <br />
-      <input type="radio" name="p5" value="b">b. No <br />
-      <br> <br>
-
-      <input type="submit" value="Enviar">
-    </form>
-  </section>
-  </div>
-  <script src="main.js" type="text/javascript"></script>
-
-  </div>
 
 
 
