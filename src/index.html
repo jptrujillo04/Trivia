@@ -1,103 +1,44 @@
 <!DOCTYPE html>
-<html lang="es" dir="ltr">
+<html lang="es">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trivia</title>
-  <link rel="stylesheet" href="estilos.css" type="text/css" media="all">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+     <title>Juego de preguntas</title>
 
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="index.css">
 
-
+</head>
 
 <body>
-  <div class="start_btn"><button>Comenzar Quiz</button></div>
-  <div class="info_box">
-    <div class="info_title">
-      <span>Reglas del Quiz</span>
-    </div>
-    <div class="info_list">
-      <div class="info">1. Solo tienes <span>15 segundos</span> por cada pregunta</div>
-      <div class="info">2. Una vez que seleccione la respuesta, no podra volver a saleccionar</div>
-      <div class="info">3. No puede selccionar ninguna opción cuando el tiempo ha finalizado</div>
-      <div class="info">4. No se puede salir del Quiz mientras se esta jugando</div>
-      <div class="info">5. Obtendras puntos en base a tus respuestas correctas</div>
-    </div>
-    <div class="buttons">
-      <button class="quit">Exit Quiz</button>
-      <button class="restart">Continue</button>
-    </div>
-  </div>
-  <div class="quiz_box">
-    <header>
-      <div class="title">Juego de preguntas</div>
-      <div class="timer">
-        <div class="time_text">Tiempo restante</div>
-        <div class="timer_sec">15</div>
-      </div>
-    </header>
-    <section>
-      <div class="que_text">
-        <span> Para que sirve HTML?</span>
-      </div>
-      <div class="option_list">
-        <div class="option">
-          <span> Que significa css</span>
-          <div class="icon tick"><i class="fas fa-check"></i></div>
-        </div>
-        <div class="option">
-          <span> Que es lenguaje de marcado de hipertexto</span>
-          <div class="icon cross"><i class="fas fa-times"></i></div>
-        </div>
-        <div class="option">
-          <span> Cual no es un lenguaje de programación</span>
-        </div>
-        <div class="option">
-          <span> Javascript es lo mismo que java</span> <br> <br>
-        </div>
-      </div>
-    </section>
-
-    <footer>
-      <div class="total_que">
-        <span>
-          <p>2</p>de<p>5</p>Preguntas
-        </span>
-      </div>
-
-      <button class="next_btn">Siguiente</button>
-    </footer>
-  </div>
-  <div class="result_box">
-    <div class="icon">
-      <i class="fas fa-crown"></i>
-    </div>
-    <div class="complete_text">Haz Completado El Cuestionario</div>
-    <div class="score_text">
-      <span>lo siento,solo tienes<p>2</p>de<p>5</p></span>
-    </div>
-    <div class="buttons">
-      <button class="restart">Repetir Quiz</button>
-      <button class="quit">Salir del Quiz</button>
-
-    </div>
-  </div>
-  <script src="main.js"></script>
-  <script src="question.js"></script>
+     <div id="contenido">
+          <div class="encabezado">
+               <div class="categoria" id="categoria">
+                    <div class="preguntas" id="pregunta">
+                         ¿Aqui va la pregunta?
+                        </div>
+                    <div class="opcion" id="opcion-1" onclick="seleccionarOpción(0)">
+                         Opción 1
+                    </div>
+                    <div class="opcion" id="opcion-2" onclick="seleccionarOpción(1)">
+                         Opción 2
+                    </div>
+                    <div class="opcion" id="opcion-3" onclick="seleccionarOpción(2)">
+                         Opción 3
+                    </div>
+                    <div class="opcion" id="opcion-4" onclick="seleccionarOpción(3)">
+                         Opción 4
+                    </div>
+               </div>
 
 
 
-  <div id="container"></div>
-  <header>
-    <div class="header_superior"></div>
-    <div class="center">
-      <div class="logo">
-        <a href="#" class="enlace">
-          <img src="logo.jpg.jpg" alt="Imagen de diseño web">
-          <img src="bienvenido.jpg" style="width:300px; height: 80px; left: 500px; margin: 1px; position: absolute;">
 
 
+          </div>
+          <script src="preguntas.js"></script>
+          <script defer src="index.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.3.0/dist/sweetalert2.all.min.js"></script>
 </body>
 
 </html>
